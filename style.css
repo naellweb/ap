@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    direction: rtl;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-X: hidden;
+}
+
+.box {
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    max-width: 400px;
+    min-height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        width: 95vw;
+    }
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+.head img {
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+}
+
+.head h6 {
+    font-size: 15px;
+    margin: 0 15px 0 16px;
+}
+
+hr {
+    flex: 1;
+    height: 1px;
+    border: none;
+    background-color: #ccc;
+}
+
+.hr {
+    background-color: #999;
+    width: calc(100% - 15%);
+    margin: 0 auto;
+}
+
+
+/* Start Card */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 15%);
+    margin: 20px auto 30px;
+}
+
+.card .img {
+    width: 140px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #00968775;
+    object-fit: contain;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.2);
+}
+
+
+/* Start Form  */
+
+form {
+    width: calc(100% - 15%);
+    margin: 20px auto 10px;
+    direction: rtl;
+}
+
+form > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form div label {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+form > div input {
+    border: none;
+    background-color: none;
+    border: 1px solid #ccc;
+    padding: 12px 13px;
+    direction: rtl;
+}
+
+form > div select {
+    border: none;
+    background-color: none;
+    border: 1px solid #ccc;
+    padding: 12px 13px;
+}
+
+form .date-cont > div input {
+    border: none;
+    background-color: none;
+    border: 1px solid #ccc;
+    padding: 12px 13px;
+}
+
+form > div input:focus,
+form > div select {
+    outline: none;
+}
+
+form .card-num input {
+    padding-right: 40px;
+}
+form .card-num {
+    position: relative;
+}
+form .card-num img {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 35px;
+    right: 10px;
+    font-size: 20px;
+    color: #888;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+form .date-cont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .date-cont > div {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 7px);
+}
+
+form .date-cont > div:first-child .inp {
+    display: flex;
+    flex-direction: row;
+}
+form .date-cont > div .inp div {
+    display: flex;
+    flex-direction: column;
+}
+form .date-cont > div .inp div input {
+    width: 100%;
+}
+form .date-cont > div:first-child input {
+    display: inline-flex;
+    width: 50%;
+}
+
+form .date-cont > div:last-child {
+    margin-right: 13px;
+}
+
+
+form .date-cont .cvv input {
+    padding-right: 40px;
+}
+form .date-cont .cvv {
+    position: relative;
+}
+form .date-cont .cvv img {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 35px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+
+form input[type="submit"] {
+    color: #fff;
+    width: 100%;
+    padding: 13px 15px;
+    margin: 14px auto 0;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+}
+form input[type="submit"]:focus {
+    outline: none;
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+}
+
+form #btn {
+    color: #fff;
+    width: 100%;
+    padding: 13px 15px;
+    margin: 14px auto 0;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+}
+form #btn:focus {
+    outline: none;
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+}
